@@ -1,20 +1,45 @@
 <extension>
-  <modules>
-    <module>
-      <id>share-amp - Example Aikau Widgets</id>
-      <version>1.0</version>
-      <auto-deploy>true</auto-deploy>
-      <configurations>
-        <config evaluator="string-compare" condition="WebFramework" replace="false">
-          <web-framework>
-            <dojo-pages>
-              <packages>
-                <package name="example" location="js/example"/>
-              </packages>
-            </dojo-pages>
-          </web-framework>
-        </config>
-      </configurations>
-    </module>
-  </modules>
+	<modules>
+		<module>
+			<id>share-amp - Example Aikau Widgets</id>
+			<version>1.0</version>
+			<auto-deploy>true</auto-deploy>
+
+			<components>
+				<component>
+					<scope>template</scope>
+					<region-id>folder-metadata</region-id>
+					<source-id>folder-details</source-id>
+					<sub-components>
+						<sub-component id="folder-size" index="100">
+							<url>/com/acme/components/folder-details/folder-size</url>
+						</sub-component>
+					</sub-components>
+				</component>
+
+                <!-- 
+				<component>
+					<region-id>folder-metadata</region-id>
+					<url>/components/folder-details/folder-metadata</url>
+					<properties>
+						<nodeRef>{nodeRef}</nodeRef>
+					</properties>
+				</component>
+                 -->
+			</components>
+
+			<configurations>
+				<config evaluator="string-compare" condition="WebFramework"
+					replace="false">
+					<web-framework>
+						<dojo-pages>
+							<packages>
+								<package name="example" location="js/example" />
+							</packages>
+						</dojo-pages>
+					</web-framework>
+				</config>
+			</configurations>
+		</module>
+	</modules>
 </extension>

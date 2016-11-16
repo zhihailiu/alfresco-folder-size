@@ -1,0 +1,6 @@
+<webscript>
+	<shortname>Folder Size</shortname>
+	<description>Show folder content size</description>
+	<url>/com/acme/components/folder-details/folder-size</url>
+	<family>Share Folder Details</family>
+</webscript>
