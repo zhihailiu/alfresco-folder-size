@@ -20,7 +20,7 @@ Also include number of documents & number of sub-folders
 http://sharextras.org/jsdoc/share/community-4.0.e/symbols/Alfresco.FolderMetadata.html
 
 ### Folder Details page URL
-https://edms.acuitys.com/share/page/folder-details?nodeRef=workspace://SpacesStore/d0ed81f2-c63e-497e-8db3-bdb9e8c96740
+https://localhost:8080/share/page/folder-details?nodeRef=workspace://SpacesStore/d0ed81f2-c63e-497e-8db3-bdb9e8c96740
 
 ### Add component/region to existing page
 http://docs.alfresco.com/4.0/tasks/tu-share-FM-temp-customize.html
