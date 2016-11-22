@@ -1,0 +1,4 @@
+{
+"nodeName": "${nodeName}",
+"size": "${size}"
+}

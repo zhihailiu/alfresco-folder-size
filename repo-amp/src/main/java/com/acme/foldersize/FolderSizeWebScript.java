@@ -14,6 +14,7 @@ import org.springframework.extensions.webscripts.DeclarativeWebScript;
 import org.springframework.extensions.webscripts.Status;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 
+//http://www.dedunu.info/2015/03/alfresco-calculate-folder-size-using.html
 public class FolderSizeWebScript extends DeclarativeWebScript {
 
 	private NodeService nodeService;
@@ -26,6 +27,7 @@ public class FolderSizeWebScript extends DeclarativeWebScript {
 	protected Map<String, Object> executeImpl(WebScriptRequest req, Status status, Cache cache) {
 		Map<String, Object> model = new HashMap<String, Object>();
 		String nodeRefId = req.getParameter("nodeRef");
+		System.out.println("nodeRef=" + nodeRefId);
 		NodeRef nodeRef = new NodeRef(nodeRefId);
 
 		String nodeName = (String) nodeService.getProperty(nodeRef, ContentModel.PROP_NAME);

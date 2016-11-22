@@ -5,11 +5,39 @@
 			<version>1.0</version>
 			<auto-deploy>true</auto-deploy>
 
+            <!-- reference
+            https://svn.alfresco.com/repos/alfresco-open-mirror/alfresco/COMMUNITYTAGS/V5.0.a/root/projects/slingshot/config/alfresco/site-data/template-instances/folder-details.xml
+             -->
+			<components>
+				<component>
+					<region-id>folder-metadata</region-id>
+					<source-id>folder-details</source-id>
+					<scope>template</scope>
+					<sub-components>
+						<sub-component id="folder-size" index="1000">
+							<url>/com/acme/components/folder-details/folder-size</url>
+							<properties>
+								<nodeRef>{nodeRef}</nodeRef>
+							</properties>
+						</sub-component>
+					</sub-components>
+				</component>
+			</components>                  
+
 			<customizations>
+			    <!-- 
 				<customization>
 					<targetPackageRoot>org.alfresco.components.folder-details</targetPackageRoot>
 					<sourcePackageRoot>com.acme.components.folder-details</sourcePackageRoot>
 				</customization>
+			     -->
+                
+                <!-- folder-details template 
+				<customization>
+					<targetPackageRoot>org.alfresco</targetPackageRoot>
+					<sourcePackageRoot>com.acme</sourcePackageRoot>
+				</customization>       
+                -->
 			</customizations>   
 
 			<configurations>
