@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>Folder Size</shortname>
+	<description>Returns the file size of the given folder nodeRef</description>
+	<url>/com/acme/foldersize/folder-size?nodeRef={nodeRef}</url>
+	<authentication>user</authentication>
+	<format default="html">extension</format>
+	<family>Folder Size Utilities</family>
+</webscript>
