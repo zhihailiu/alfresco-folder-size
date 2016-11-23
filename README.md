@@ -1,12 +1,13 @@
 # Folder Content Size in Alfresco Share 
-Customize Share Folder Details page to show content size in this folder.
+Customize Share Folder Details page to show (recursive) content size in this folder.
 
 ## Share
 - Customize Folder Details Page
 - Add Folder Size as sub-component to Folder Metadata section
+- When browsing with Repository menu in Share, this can show the size of Site, User Homes etc, which are sub-types of cm:folder.
 
 ## Repo
-Create webscript to calculate content size in folder
+Create webscript to calculate node content size. The number may be different from that of Alfresco OOTB webscript (/slingshot/doclib2/node). It includes the child nodes such as thumbnails while the OOTB does not.
 
 ## TODO
 - Include number of documents & number of sub-folders
