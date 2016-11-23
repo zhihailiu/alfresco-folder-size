@@ -1,7 +1,7 @@
 <extension>
 	<modules>
 		<module>
-			<id>share-amp - Example Aikau Widgets</id>
+			<id>alfresco-folder-size-share-amp - Folder Size Share AMP</id>
 			<version>1.0</version>
 			<auto-deploy>true</auto-deploy>
 
@@ -23,22 +23,6 @@
 					</sub-components>
 				</component>
 			</components>                  
-
-			<customizations>
-			    <!-- 
-				<customization>
-					<targetPackageRoot>org.alfresco.components.folder-details</targetPackageRoot>
-					<sourcePackageRoot>com.acme.components.folder-details</sourcePackageRoot>
-				</customization>
-			     -->
-                
-                <!-- folder-details template 
-				<customization>
-					<targetPackageRoot>org.alfresco</targetPackageRoot>
-					<sourcePackageRoot>com.acme</sourcePackageRoot>
-				</customization>       
-                -->
-			</customizations>   
 
 			<configurations>
 				<config evaluator="string-compare" condition="WebFramework"
