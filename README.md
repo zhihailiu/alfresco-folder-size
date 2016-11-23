@@ -2,25 +2,25 @@
 Customize Share Folder Details page to show content size in this folder.
 
 ## Share
-Customize page folder-details.xml
-Add a component/region folder-size
+- Customize Folder Details Page
+- Add Folder Size as sub-component to Folder Metadata section
 
 ## Repo
-Create webscript to calculate content size
+Create webscript to calculate content size in folder
 
 ## TODO
-Also include number of documents & number of sub-folders
+- Include number of documents & number of sub-folders
+- Add Folder Size as a new region/component to Folder Details template, instead of sub-component of Folder Metadata
 
 ## References
 ### Add sub-component to existing component/region
-- http://docs.alfresco.com/5.0/tasks/dev-extensions-share-tutorials-add-content.html
-- https://www.alfresco.com/blogs/ewinlof/2011/11/09/add-remove-or-replace-components-on-shares-document-details-page/
+http://docs.alfresco.com/5.0/tasks/dev-extensions-share-tutorials-add-content.html
 
 ### YUI widget - Alfresco.FolderMetadata
 http://sharextras.org/jsdoc/share/community-4.0.e/symbols/Alfresco.FolderMetadata.html
 
-### Folder Details page URL
-https://localhost:8080/share/page/folder-details?nodeRef=workspace://SpacesStore/d0ed81f2-c63e-497e-8db3-bdb9e8c96740
-
-### Add component/region to existing page
+### Add component/region to existing page/template
+http://docs.alfresco.com/4.0/tasks/tu_40_add-content.html
 http://docs.alfresco.com/4.0/tasks/tu-share-FM-temp-customize.html
+http://docs.alfresco.com/5.0/tasks/dev-extensions-share-tutorials-fm-temp-customize.html
+https://www.alfresco.com/blogs/developer/2011/08/12/customizing-alfresco-share-freemarker-templates/
