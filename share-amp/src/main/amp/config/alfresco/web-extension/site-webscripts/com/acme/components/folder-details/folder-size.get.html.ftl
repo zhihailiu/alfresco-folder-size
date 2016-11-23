@@ -1,4 +1,3 @@
-<#include "/org/alfresco/include/alfresco-macros.lib.ftl" />
 <#assign el=args.htmlid>
 
 <div id="${el}-body" class="folder-metadata-header folder-details-panel">

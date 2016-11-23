@@ -15,7 +15,7 @@
 		parent="webscript">
 	</bean>
 
-	<bean id="webscript.com.acme.foldersize.folder-size.get" class="com.acme.foldersize.FolderSizeWebScript"
+	<bean id="webscript.com.acme.nodesize.node-size.get" class="com.acme.nodesize.NodeSizeWebScript"
 		parent="webscript">
 		<property name="nodeService">
 			<ref bean="NodeService" />

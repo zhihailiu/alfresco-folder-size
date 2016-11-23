@@ -1,0 +1,8 @@
+<webscript>
+	<shortname>Node Content Size</shortname>
+	<description>Returns the recursive content size of the given nodeRef</description>
+	<url>/com/acme/nodesize/node-size?nodeRef={nodeRef}</url>
+	<authentication>user</authentication>
+	<format default="html">extension</format>
+	<family>Node Size Utilities</family>
+</webscript>

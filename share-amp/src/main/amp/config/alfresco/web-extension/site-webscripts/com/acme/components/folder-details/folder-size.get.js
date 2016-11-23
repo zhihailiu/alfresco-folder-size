@@ -1,6 +1,6 @@
 <import resource="classpath:/alfresco/templates/org/alfresco/import/alfresco-util.js">
 
-//https://jsfiddle.net/oy02axhh/
+// https://jsfiddle.net/oy02axhh/
 function formatBytes(bytes) {
 	if(bytes == 0) return '0 Byte';
 	var k = 1024; // or 1024 for binary
@@ -15,7 +15,7 @@ function main() {
 
 	// call repository webscript
 	var connector = remote.connect("alfresco");
-	var data = connector.get("/com/acme/foldersize/folder-size.json?nodeRef=" + model.nodeRef);
+	var data = connector.get("/com/acme/nodesize/node-size.json?nodeRef=" + model.nodeRef);
 
 	// create json object from data
 	var result = eval('(' + data + ')');
